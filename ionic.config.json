@@ -1,0 +1,7 @@
+{
+  "name": "ProHogar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

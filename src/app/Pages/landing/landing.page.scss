@@ -1,0 +1,60 @@
+/* Fondo principal del contenido */
+ion-content {
+  --background: #ffffff; /* Fondo blanco para todo el contenido */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+/* Sección Hero */
+.hero-section {
+  text-align: center; /* Centrar el texto */
+  padding: 50px 20px; /* Padding para espaciado */
+  background-color: #f1f1f1; /* Fondo gris claro */
+}
+
+.hero-section h1 {
+  color: #333; /* Gris oscuro para el título */
+  font-size: 2.5rem; /* Tamaño del texto */
+  margin: 0; /* Elimina el margen */
+}
+
+/* Sección de Importancia */
+.importance-section {
+  padding: 20px;
+}
+
+.importance-section h2 {
+  color: #333; /* Gris oscuro para el subtítulo */
+  font-size: 1.5rem; /* Tamaño del texto */
+  margin-bottom: 10px; /* Espacio debajo del subtítulo */
+}
+
+.importance-section p {
+  color: #666; /* Gris medio para el párrafo */
+  font-size: 1rem; /* Tamaño del texto */
+  line-height: 1.5; /* Altura de línea para mejor lectura */
+}
+
+/* Sección de Opciones */
+.options-section {
+  padding: 20px;
+}
+
+.option-button {
+  margin: 10px 0; /* Margen entre botones */
+}
+
+/* Botón de 'Hire Services' */
+.hire-button {
+  background-color: #FFC33F !important; /* Fondo amarillo */
+  color: #ffffff; /* Texto blanco */
+  --background: #FFC33F !important; /* Fondo amarillo */
+  --color: #ffffff; /* Texto blanco */
+}
+
+/* Botón de 'Offer Services' */
+.offer-button {
+  background-color: #FFC33F !important; /* Fondo amarillo */
+  color: #ffffff; /* Texto blanco */
+  --background: #FFC33F !important; /* Fondo amarillo */
+  --color: #ffffff; /* Texto blanco */
+}

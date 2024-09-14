@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pro Hogar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tipo De Servicio</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="Tipo_Servicio" placeholder="Opciones" [multiple]="false">
+              <ion-select-option value="tipo_1">Expres</ion-select-option>
+              <ion-select-option value="tipo_2">Continuo</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Dias Requeridos</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-card-content>
+          <ion-list>
+            <ion-item>
+              <ion-select aria-label="Dias" placeholder="Opciones" [multiple]="true">
+                <ion-select-option value="lunes">Lunes</ion-select-option>
+                <ion-select-option value="martes">Martes</ion-select-option>
+                <ion-select-option value="miercoles">Miercoles</ion-select-option>
+                <ion-select-option value="jueves">Jueves</ion-select-option>                
+                <ion-select-option value="viernes">Viernes</ion-select-option>
+                <ion-select-option value="sabado">Sabado</ion-select-option>                
+                <ion-select-option value="domingo">Domingo</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Horas De Servicio Al Dia</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="Horas_Dia" placeholder="Opciones" [multiple]="false">
+              <ion-select-option value="tipo_1">1 Hora</ion-select-option>
+              <ion-select-option value="tipo_2">2 Horas</ion-select-option>
+              <ion-select-option value="tipo_3">3 Horas</ion-select-option>
+              <ion-select-option value="tipo_4">4 Horas</ion-select-option>
+              <ion-select-option value="tipo_5">5 Horas</ion-select-option>
+              <ion-select-option value="tipo_6">6 Horas</ion-select-option>
+              <ion-select-option value="tipo_7">7 Horas</ion-select-option>
+              <ion-select-option value="tipo_8">8 Horas</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Fecha De Inicio</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-datetime presentation="date" [preferWheel]="true"></ion-datetime>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

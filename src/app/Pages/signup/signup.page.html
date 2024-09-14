@@ -1,0 +1,50 @@
+<ion-content class="register-container">
+  <div class="register-form">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12" size-md="8" size-lg="6">
+          <ion-card class="register-card">
+            <ion-card-header>
+              <ion-card-title class="app-title">Pro Hogar</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <form>
+                <!-- Name Field -->
+                <ion-item>
+                  <ion-label position="floating">Name</ion-label>
+                  <ion-input type="text" required></ion-input>
+                </ion-item>
+
+                <!-- Email Field -->
+                <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input type="email" required></ion-input>
+                </ion-item>
+
+                <!-- Password Field -->
+                <ion-item>
+                  <ion-label position="floating">Password</ion-label>
+                  <ion-input type="password" required></ion-input>
+                </ion-item>
+
+                <!-- Confirm Password Field -->
+                <ion-item>
+                  <ion-label position="floating">Confirm Password</ion-label>
+                  <ion-input type="password" required></ion-input>
+                </ion-item>
+
+                <!-- Register Button -->
+                <ion-button expand="block" class="register-button">Register</ion-button>
+              </form>
+
+              <!-- Login Link -->
+              <ion-text class="login-link ion-text-center">
+                <p>Already have an account? <a href="/login">Login</a></p>
+              </ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

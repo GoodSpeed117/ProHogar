@@ -1,0 +1,92 @@
+/* Fondo principal de la página blanco */
+ion-content {
+  --background: #ffffff; /* Fondo blanco */
+}
+
+/* Contenedor del encabezado */
+.header {
+  margin: 150px auto 30px auto; /* Ajusta el margen para centrar */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilo del título */
+.header .title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center; /* Centra el enlace */
+  color: #000000; /* Texto negro para 'Welcome Back' */
+}
+
+/* Estilo del subtítulo */
+.header .subtitle {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* Estilo para los items de entrada */
+ion-item {
+  --background: #f1f1f1; /* Fondo gris claro para los campos */
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* Estilo para el texto dentro de ion-item */
+ion-item ion-input {
+  color: #333333; /* Texto gris oscuro para el 'username' y 'password' */
+}
+
+/* Estilo para los mensajes de error */
+.error-messages {
+  padding-top: 0; /* Ajusta el padding para mejorar la separación */
+  padding-bottom: 16px;
+  text-align: center; /* Centra los mensajes de error */
+}
+
+/* Estilo para los textos de error */
+.errorInput {
+  color: red;
+  font-weight: 300;
+  font-size: small;
+}
+
+/* Estilo para el enlace de contraseña olvidada */
+.reset-password {
+  display: flex;
+  justify-content: center; /* Centra el enlace */
+  margin-top: 10px; /* Ajusta el margen superior */
+  margin-bottom: 20px; /* Ajusta el margen inferior */
+}
+
+.reset-password a {
+  font-weight: 400;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #FFC33F; /* Color del enlace */
+}
+
+/* Estilo para el enlace de registro */
+.signupLink {
+  display: flex;
+  justify-content: center; /* Centra el enlace */
+  margin-top: 10px; /* Ajusta el margen superior */
+  margin-bottom: 20px; /* Ajusta el margen inferior */
+}
+
+.signupLink .p {
+  font-weight: 400;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #000000; /* Color del enlace */
+}
+
+.signupLink a {
+  text-decoration: none;
+  color: #FFC33F; /* Color del enlace */
+}
+
+/* Estilo para el botón de FAB */
+ion-fab {
+  position: absolute;
+  bottom: 30px; /* Ajusta la distancia desde el fondo */
+  right: 16px; /* Ajusta la distancia desde el borde derecho */
+}

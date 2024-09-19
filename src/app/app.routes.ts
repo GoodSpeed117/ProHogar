@@ -2,12 +2,8 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
-  },
-  {
     path: '',
-    redirectTo: 'contratar-servicios',
+    redirectTo: 'tabs',
     pathMatch: 'full',
   },
   {
@@ -19,19 +15,34 @@ export const routes: Routes = [
     loadComponent: () => import('./Pages/signup/signup.page').then( m => m.SignupPage)
   },
   {
-    path: 'landing',
-    loadComponent: () => import('./Pages/landing/landing.page').then( m => m.LandingPage)
-  },
-  {
     path: 'reset-password',
     loadComponent: () => import('./Pages/reset-password/reset-password.page').then( m => m.ResetPasswordPage)
   },
   {
-    path: 'ofrecer-servicios',
-    loadComponent: () => import('./Pages/ofrecer-servicios/ofrecer-servicios.page').then( m => m.OfrecerServiciosPage)
-  },
-  {
-    path: 'contratar-servicios',
-    loadComponent: () => import('./Pages/contratar-servicios/contratar-servicios.page').then( m => m.ContratarServiciosPage)
-  },
+    path: 'tabs',
+    loadComponent: () => import('./Pages/tabs/tabs.page').then( m => m.TabsPage),
+    children: [
+      {
+        path: 'home',
+        loadComponent: () => import('./Pages/home/home.page').then( m => m.HomePage),
+      },
+      {
+        path: 'search',
+        loadComponent: () => import('./Pages/search/search.page').then( m => m.SearchPage),
+      },
+      {
+        path: 'reservations',
+        loadComponent: () => import('./Pages/reservations/reservations.page').then( m => m.ReservationsPage),
+      },
+      {
+        path: 'offers',
+        loadComponent: () => import('./Pages/offers/offers.page').then( m => m.OffersPage),
+      },
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      }
+    ]
+  }
 ];

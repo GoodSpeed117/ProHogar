@@ -34,7 +34,7 @@ export class LoginPage implements OnInit {
       return;  // Solo regresa sin un valor específico
     } else {
       console.log('Login successful!');
-      this.navCtrl.navigateForward('/home');  // Navega a la página de inicio
+      this.navCtrl.navigateForward('/tabs');  // Navega a la página de tabs
     }
   }
 

@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';  // Importa el módulo completo de Ionic
 
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.page.html',
-  styleUrls: ['./landing.page.scss'],
+  selector: 'app-search',
+  templateUrl: './search.page.html',
+  styleUrls: ['./search.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule]  // Añade IonicModule
+  imports: [IonicModule, CommonModule, FormsModule]
 })
-export class LandingPage implements OnInit {
+export class SearchPage implements OnInit {
 
   constructor() { }
 
